@@ -1,0 +1,49 @@
+
+
+.main-pro{
+      grid-area: body;
+      padding:10px;
+
+
+      .main-pro-top{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            margin-bottom: 30px;
+
+            .control-grid{
+                  display:flex;
+                  align-items:center;
+                  gap:5px;
+
+                  >svg{
+                        background: #F6F8FA;
+                        color: #212529;
+                        padding: 3px;
+                        font-size: 26px;
+                        cursor: pointer;
+
+                        &.active{
+                              color:#fff;
+                              background:#212529;
+                        }
+                  }
+            }
+
+            .lenght-pro{
+                  font-size: 15px;
+                  color: #212529;
+                  font-weight: bold;
+            }
+            select{
+                  padding: 0.5rem;
+                  cursor: pointer;
+            }
+      }
+
+      .main-pro-bottom{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px,1fr) );
+            gap: 20px;
+      }
+}

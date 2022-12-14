@@ -1,0 +1,52 @@
+
+.grid-section{
+  margin-top: 20px;
+  .grid-control{
+    padding: 10px;
+    border: 2px solid hsl(252,30%,17%);
+    border-radius: 10px;
+    width: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .fa-solid.active{
+      color: #3150cb;
+    }
+
+    i{
+      color:hsl(252,30%,17%);
+      cursor:pointer;
+    }
+  }
+  .container{
+      display: grid;
+      grid-template-columns: repeat( auto-fit, minmax(300px,1fr));
+      gap: 20px;
+
+      .grid-box{
+        padding: 10px;
+        background: #207a99;
+        border-radius: 10px;
+        text-align: center;
+        color: hsl(252,15%,95%);
+
+        h1{
+          color: hsl(252,15%,95%);
+        }
+
+
+        &:nth-child(odd) >div{
+          min-height: 6px;
+          background: linear-gradient(to right, rgb(0, 64, 112) 33.33%, rgb(26, 107, 212) 33.33%, rgb(26, 107, 212) 66.66%, rgb(77, 186, 227) 66.66%);
+        }
+
+        &:nth-child(even) > div{
+          min-height: 6px;
+          background: linear-gradient(to right, rgb(0, 122, 102) 33.33%, rgb(112, 202, 0) 33.33%, rgb(112, 202, 0) 66.66%, rgb(198, 223, 0) 66.66%);
+          }
+        
+      }
+  }
+}

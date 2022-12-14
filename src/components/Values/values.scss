@@ -1,0 +1,125 @@
+
+.section{
+  .container{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+
+    .pic{
+      flex:1;
+      position:relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .back{
+        width: 266px;
+        height: 316px;
+        border-radius: 135px 135px 16px 16px;       
+        background-color:hsl(228,24%,97%)
+      }
+
+      img{
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 125px 125px 12px 12px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+      }
+    }
+
+    .val_content{
+      flex:1;
+
+      .top_content{
+        padding:10px;
+
+        span{
+          font-size: 15px;
+          color: orange;
+          font-weight: 700;
+        }
+
+        h2{
+              font-size: 20px;
+              color: #1F3071;
+              font-weight: 700;
+              margin: 10px 0;
+              span{
+                color:orange;
+              }
+        }
+
+        p{
+          font-size:14px;
+          color:gray;
+        }
+      }
+
+      .bottom_content{
+        display:grid;
+        row-gap:10px;
+        .accordion-item{
+          padding:10px;
+          border: 2px solid #e3e2e2;
+          border-radius: 5px;
+
+          .accordion-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 10px;
+            cursor: pointer;
+
+            i:nth-child(1){
+                  color: #3150cb;
+                  background: #ddd7d7;
+                  padding: 4px;
+                  border-radius: 10px;
+            }
+
+            .fa-chevron-right{
+              transition:0.3s ease; 
+              transform: rotate(90deg);
+              &.open{
+                   transform: rotate(0deg);
+              }
+            }
+
+            h3{
+                  font-size: 15px;
+                  color: #1F3071;
+            }
+
+
+          }
+
+          .elastic-part{
+              height:0;
+              opacity:0;
+              padding:0;
+            transition:0.3s ease;
+            &.open{
+              height:auto;
+              opacity:1;
+              padding:20px;
+              p{
+                display:block
+              }
+            }
+            p{
+                  font-size: 14px;
+                  color: gray;
+                  display:none;
+                  transition:0.3s ease;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+
+
+.pro-bottom-single{
+    max-width: 250px;
+    background: #F6F8FA;
+    border-radius: 1rem;
+    margin: auto;
+    cursor:pointer;
+    position:relative;
+
+    &:hover{
+      .img{
+
+        &:before{
+          width:100%;
+        }
+        img{
+          transform:scale(1);
+        }
+
+        span{
+          left:50%;
+          opacity: 1;
+        }
+
+        .control-amount{
+          left:50%;
+          opacity:1
+        }
+      }
+    }
+
+    .single-company{
+      position: absolute;
+      z-index: 222;
+      top: 15%;
+      right: 10%;
+      text-transform: uppercase;
+      background-color: #F6F8FA;
+      color: #8490ff;
+      padding: 5px 10px;
+      font-size: 15px;
+      border-radius: 2rem;
+    }
+
+    >.img{
+      position:relative;
+      &:before{
+            position: absolute;
+            content: "";
+            width: 0%;
+            height: 98%;
+            background-color: #00000045;
+            top: 0;
+            left: 0;
+            z-index: 1111;
+            transition: 0.3s ease;
+        }
+
+      img{
+          width: 100%;
+          object-fit: cover;
+          transition: 0.3s ease;
+          transform: scale(0.9);
+          overflow: hidden;
+      }
+
+      >span{
+        padding: 2px;
+        background: #8490ff;
+        position: absolute;
+        left: 0%;
+        z-index: 100000000;
+        color: white;
+        font-size: 12px;
+        cursor: pointer;
+        border-radius: 5px;
+        border: 1px solid #8490ff;
+        top: 80%;
+        transform: translate(-50%, -50%);
+        transition: 0.3s linear;
+        opacity: 0;
+      }
+
+      .control-amount{
+        display: flex;
+        position: absolute;
+        bottom: 20%;
+        color: #8490ff;
+        left: 0%;
+        padding: 5px;
+        width: 83%;
+        transform: translate(-50%, 10px);
+        background: #fff;
+        justify-content: space-around;
+        z-index: 100000000;
+        transition: 0.3s linear;
+        opacity:0;
+
+        >span{
+          user-select:none;
+        }
+      }
+    }
+
+
+
+    .single-info{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+
+      h2{
+        color: rgba(29 ,29,29,.8);
+        text-transform: capitalize;
+        font-size: 16px;
+      }
+
+      span{
+            color: #8490ff;
+      }
+    }
+}

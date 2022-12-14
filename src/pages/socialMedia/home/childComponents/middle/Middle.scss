@@ -1,0 +1,121 @@
+
+
+.middle{
+  .swiper{
+    background: #e1e1e1b3;
+    border-radius: 10px;
+  }
+  .stories{
+    padding: var(--padding-el);
+    margin-bottom: 10px;
+    .story{
+      position: relative;
+      width: auto;
+      border-radius: var(--border-rad);
+      overflow: hidden;
+
+      >img{
+        width: 114px;
+      }
+
+      .content{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        top: 0;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+
+        h4{
+          font-weight: 600;
+          font-size: 13px;
+          color: var(--light-gray);
+        }
+      }
+    }
+  }
+
+  .make_Post{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 20px auto;
+    input{
+      width: 80%;
+      padding:5px;
+    }
+  }
+
+  .posts{
+    .post{
+      width: 100%;
+      background: #fff;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 15px auto;
+      .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        i{
+          color:var(--black-color);
+        }
+        .user-top {
+          display: flex;
+          gap: 5px;
+          align-items: center;
+          &> div{
+          h4{
+            color:var(--black-color);
+          }
+        }}
+        
+       
+      }
+
+      >img{
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        height: 300px;
+      }
+
+      .btn-control{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+        align-items: center;
+
+        .main-control{
+          display: flex;
+          align-items: center;
+          column-gap: 5px;
+        }
+      }
+
+      .post-interaction{
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+        color:var(--black-color);
+
+        .profile-icons{
+          display: flex;
+          align-items: center;
+
+          >img{
+            width:30px;
+            height:30px;
+          }
+        }
+
+      }
+    }
+  }
+}

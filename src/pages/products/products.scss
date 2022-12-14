@@ -1,0 +1,17 @@
+
+
+.products-comp{
+  .container{
+        display: grid;
+        grid:"sidebar body" 1fr/ auto 1fr;
+        gap: 8px;
+
+        @media(max-width:800px){
+              grid: "sidebar" auto "body" 1fr /auto;
+              gap: 30px;
+        }
+
+
+  }
+
+}
